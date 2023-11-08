@@ -386,6 +386,8 @@ MonoBehaviour:
   hud: {fileID: 5137344875501349337}
   msgVitoria: {fileID: 5137344877378901235}
   restantes: 0
+  clipMoeda: {fileID: 8300000, guid: 262ff8690496bb7479291c7514214f35, type: 3}
+  clipVitoria: {fileID: 8300000, guid: 46355813598c1034fa77bd193bde6803, type: 3}
 --- !u!1 &5137344877378901234
 GameObject:
   m_ObjectHideFlags: 0
