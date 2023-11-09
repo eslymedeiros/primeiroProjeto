@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI hud, msgVitoria;
     public int restantes;
     public AudioClip clipMoeda, clipVitoria;
-
     private AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
     {
         restantes -= valor;
         hud.text = $"Moédas restantes: {restantes}";
-
         source.PlayOneShot(clipMoeda);
 
         if (restantes <= 0){
@@ -31,5 +30,10 @@ public class GameManager : MonoBehaviour
             source.Stop();
             source.PlayOneShot(clipVitoria);
         }
+    }
+
+    void Update()
+    {
+        
     }
 }
